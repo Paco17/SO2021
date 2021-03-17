@@ -29,7 +29,7 @@ main(void)
     if(pid == 0){
 	  //1) Cuando paso a ls se queda en un for infinito pasando por las funciones
       exec("programax", argv);
-	  //2) Cuando paso un programa inexistente
+	  //2) Cuando paso un programa inexistente EL EXEC falla por no encontrar el programa 
       printf(1, "init: exec sh failed\n");
       exit();
     }
