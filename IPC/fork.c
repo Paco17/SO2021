@@ -6,7 +6,7 @@
 void signalHandler(int sig){
     printf("Recibi segnal %d\n", sig);
     int pidHijoTermino = wait(NULL);
-    printf("Mi Hijo terminó %d \n",pidHijoTermino);
+    printf("Mi Hijo terminรณ %d \n",pidHijoTermino);
 
 }
 int main(){

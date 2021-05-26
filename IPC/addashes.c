@@ -9,9 +9,9 @@ int main(){
 	
 	if(pid==0){
 		//Hijo
-		close(fd[1]);
-		dup2(fd[0], STDIN_FILENO);
-		execl("/usr/bin/tr","tr", " ", "-",NULL);
+		close(fd[1]); //Cerrando la salida
+		dup2(fd[0], STDIN_FILENO);//Entrada
+		execl("/usr/bin/tr","tr", " ", "-",NULL); //Reemplazo
 	}
 	
 	
